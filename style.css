@@ -1,0 +1,150 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    height: 80px;
+    box-shadow: 0 1px 5px rgb(129, 129, 129);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header>h1 {
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: background 500ms;
+}
+
+input[type="checkbox"]:checked {
+    background-color: rgb(129, 216, 43);
+}
+
+.container {
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.quadro {
+    width: 500px;
+    height: 250px;
+    box-shadow: 9px -9px 16px #cfcfcf,
+        -9px 9px 16px #ffffff;
+}
+
+.quadro::before {
+    content: "";
+    height: 100%;
+    width: 3px;
+    background-color: rgba(165, 42, 42, 0.459);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.quadro::after {
+    content: "";
+    height: 3px;
+    width: 100%;
+    background-color: rgba(165, 42, 42, 0.459);
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.elemento {
+    position: static;
+    width: 80px;
+    height: 80px;
+    background-color: rgb(129, 216, 43);
+    transition: all 700ms;
+    border: 1px solid;
+    z-index: 2;
+}
+
+.controlador {
+    margin: 15px 0;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.op{
+    display: flex;
+    align-items: center;
+    margin: 3px 0;
+}
+
+.op > label{
+    margin: 0 5px;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.top {
+    top: 50%;
+}
+
+.left {
+    left: 50%;
+}
+
+.transform{
+    transform: translate(-50%, -50%);
+}
+
+.display {
+    display: flex;
+}
+
+.align-items {
+    align-items: center;
+}
+
+.justify-content {
+    justify-content: center;
+}
+
+@media screen and (max-width: 550px) {
+
+    header>h1{
+        font-size: 20px;
+    }
+
+    .quadro {
+        width: 80%;
+        
+    }
+
+    .elemento {
+        width: 60px;
+        height: 60px;
+    }
+
+    .controlador{
+        width: 80%;
+    }
+    
+}

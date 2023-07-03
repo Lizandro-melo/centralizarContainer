@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <title>Centralizar Container</title>
+</head>
+
+<body>
+    <header>
+        <h1>
+            < Centralizar um container>
+        </h1>
+    </header>
+    <main>
+        <section class="container" id="container-position">
+            <section class="quadro">
+                <section class="elemento"></section>
+            </section>
+            <section class="controlador">
+                <section class="op">
+                    <input name="key1" type="checkbox">
+                    <label for="position"><code>Position: absolute;</code></label>
+                </section>
+                <section class="op">
+                    <input name="key2" type="checkbox" >
+                    <label for="top"><code>top: 50%;</code></label>
+                </section>
+                <section class="op">
+                    <input name="key3" type="checkbox">
+                    <label for="left"><code>left: 50%;</code></label>
+                </section>
+                <section class="op">
+                    <input name="key4" type="checkbox" value="translate(-50%, -50%)">
+                    <label for="transform"><code>transform: translate(-50%, -50%);</code></label>
+                </section>
+            </section>
+        </section>
+        <section class="container" id="container-flex">
+            <section class="quadro">
+                <section class="elemento" id="elemento-position"></section>
+            </section>
+            <section class="controlador">
+                <section class="op">
+                    <input name="key1" type="checkbox">
+                    <label for="position"><code>display: flex;</code></label>
+                </section>
+                <section class="op">
+                    <input name="key2" type="checkbox" >
+                    <label for="top"><code>align-items: center;</code></label>
+                </section>
+                <section class="op">
+                    <input name="key3" type="checkbox">
+                    <label for="left"><code>justify-content: center;</code></label>
+                </section>
+            </section>
+        </section>
+    </main>
+</body>
+
+</html>
