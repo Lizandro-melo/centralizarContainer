@@ -60,6 +60,7 @@ input[type="checkbox"]:checked {
     position: absolute;
     left: 50%;
     transform: translate(-50%);
+    z-index: 1;
 }
 
 .quadro::after {
@@ -70,6 +71,7 @@ input[type="checkbox"]:checked {
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
+    z-index: 1;
 }
 
 .elemento {
@@ -79,7 +81,7 @@ input[type="checkbox"]:checked {
     background-color: rgb(129, 216, 43);
     transition: all 700ms;
     border: 1px solid;
-    z-index: 2;
+    z-index: 0;
 }
 
 .controlador {
@@ -125,6 +127,18 @@ input[type="checkbox"]:checked {
 
 .justify-content {
     justify-content: center;
+}
+
+.margin{
+    margin: auto auto;
+}
+
+.display-grid {
+    display: grid;
+}
+
+.place-content{
+    place-content: center;
 }
 
 @media screen and (max-width: 550px) {
